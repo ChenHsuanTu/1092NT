@@ -447,8 +447,7 @@ NDC.=sum(max(D)-D)/(n*(n-1))</code></pre>
 <blockquote>
 <p>Eigenvector centrality</p>
 </blockquote>
-<pre class="r"><code>#only for positive-definite(positive semidefinite) matrix
-EC=eigen_centrality(G)$vector
+<pre class="r"><code>EC=eigen_centrality(G)$vector
 
 EC.=eigen(M.U)$vectors[,1] #principle eigenvector
 EC.=abs(EC.)/max(abs(EC.))</code></pre>
